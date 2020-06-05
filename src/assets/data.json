@@ -1,0 +1,66 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Nike Air Jordan 1 Retro Satin",
+      "price": 999.9,
+      "image": "../../assets/images/sneakers/Air Jordan.png"
+    },
+    {
+      "id": 2,
+      "title": "Nike Air Jordan Footwear",
+      "price": 539.9,
+      "image": "../../assets/images/sneakers/Air Jordan Footwear.png"
+    },
+    {
+      "id": 3,
+      "title": "Nike Air Jordan Diamond",
+      "price": 1499.9,
+      "image": "../../assets/images/sneakers/Air Jordan Diamond.png"
+    },
+    {
+      "id": 5,
+      "title": "Nike Free Air Force",
+      "price": 139.9,
+      "image": "../../assets/images/sneakers/Nike Free Air Force.png"
+    },
+    {
+      "id": 6,
+      "title": "Jumpman Nike Air Jordan",
+      "price": 219.9,
+      "image": "../../assets/images/sneakers/Jumpman Nike Air Jordan Shoe Foot Locker.png"
+    },
+    {
+      "id": 4,
+      "title": "Air Jordan Nike FreeShoe",
+      "price": 179.9,
+      "image": "../../assets/images/sneakers/Air Jordan Nike Free Shoe.png"
+    }
+  ]
+}
