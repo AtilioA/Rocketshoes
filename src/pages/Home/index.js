@@ -42,10 +42,7 @@ class Home extends Component {
       <ProductList>
         {products.map((product) => (
           <li key={product.id}>
-            <img
-              src={require('../../assets/images/sneakers/Air Jordan.png')}
-              alt={product.title}
-            />
+            <img src={product.image} alt={product.title} />
 
             <strong>{product.title}</strong>
             <span>{product.formattedPrice}</span>
