@@ -26,10 +26,10 @@ class Home extends Component {
     this.setState({ products: data });
   }
 
-  handleAddToCart = (product) => {
-    const { handleAddToCart } = this.props;
+  handleAddToCart = (id) => {
+    const { handleAddToCartSuccess } = this.props;
 
-    handleAddToCart(product);
+    handleAddToCartSuccess(id);
   };
 
   render() {
