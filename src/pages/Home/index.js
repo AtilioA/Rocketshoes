@@ -53,9 +53,9 @@ class Home extends Component {
             <button type="button" onClick={() => this.handleAddToCart(product)}>
               <div>
                 <MdAddShoppingCart size={16} color="#FFF" />{' '}
-                {amount[product.id]} || 0
+                {amount[product.id] || 0}
               </div>
-              <span>Add to cart</span>
+              <span>ADD TO CART</span>
             </button>
           </li>
         ))}
@@ -75,4 +75,4 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators(CartActions, dispatch);
 
-export default connect(null, mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
