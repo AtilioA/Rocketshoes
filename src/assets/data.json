@@ -47,19 +47,19 @@
     {
       "id": 5,
       "title": "Nike Free Air Force",
-      "price": 139.9,
+      "price": 1399.9,
       "image": "../../assets/images/sneakers/Nike Free Air Force.png"
     },
     {
       "id": 6,
       "title": "Jumpman Nike Air Jordan",
-      "price": 219.9,
+      "price": 1219.9,
       "image": "../../assets/images/sneakers/Jumpman Nike Air Jordan Shoe Foot Locker.png"
     },
     {
       "id": 4,
       "title": "Air Jordan Nike FreeShoe",
-      "price": 179.9,
+      "price": 1179.9,
       "image": "../../assets/images/sneakers/Air Jordan Nike Free Shoe.png"
     }
   ]

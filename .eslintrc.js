@@ -3,7 +3,7 @@ module.exports = {
     "browser": true,
     "es6": true
   },
-  "extends": ["eslint:recommended", "prettier", "prettier/react", "plugin:react/recommended", "prettier/react"],
+  "extends": ["eslint:recommended", "prettier", "prettier/react", "plugin:react/recommended"],
   "plugins": ["react", "prettier"],
   "globals": {
     "Atomics": "readonly",
@@ -24,5 +24,6 @@ module.exports = {
     "camelcase": "off",
     "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
     'import/prefer-default-export': 'off',
+    'no-console': ['error', { allow: ['tron'] }],
   }
 };
