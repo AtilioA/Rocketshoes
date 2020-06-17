@@ -1,15 +1,14 @@
 # FluxShoes
 
-
 <h2 align="center">
   ⚛ ReactJS app to study Redux and Flux architecture
   <!-- <img alt="fluxshoes" title="fluxshoes" src=".github/app.gif" width="250px" /> -->
 </h1>
 
 <p align="center">
-  <a href="#💻-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🔧-tools">Tools</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🏡-running-locally">Running locally</a>
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tools">Tools</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-running-locally">Running locally</a>
 </p>
 
 <p align="center">
