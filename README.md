@@ -1,8 +1,8 @@
-# FluxShoes
+# Rocketshoes
 
 <h2 align="center">
   ⚛ ReactJS app to study Redux and Flux architecture
-  <!-- <img alt="fluxshoes" title="fluxshoes" src=".github/app.gif" width="250px" /> -->
+  <img alt="rocketshoes" title="rocketshoes" src=".github/app.gif" width="100%" />
 </h1>
 
 <p align="center">
