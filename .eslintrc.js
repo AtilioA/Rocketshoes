@@ -3,7 +3,7 @@ module.exports = {
     "browser": true,
     "es6": true
   },
-  "extends": ["eslint:recommended", "prettier", "prettier/react", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "prettier", "prettier/react", "plugin:react/recommended", "react-hooks"],
   "plugins": ["react", "prettier"],
   "globals": {
     "Atomics": "readonly",
@@ -25,5 +25,7 @@ module.exports = {
     "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
     'import/prefer-default-export': 'off',
     'no-console': ['error', { allow: ['tron'] }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   }
 };
