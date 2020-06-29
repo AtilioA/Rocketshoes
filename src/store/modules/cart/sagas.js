@@ -1,10 +1,10 @@
-import { call, select, put, all, takeLatest } from 'redux-saga/effects';
+import { call, put, all, takeLatest, select } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
-import { formatPrice } from '../../../utils/format';
+import { formatPrice } from '../../../util/format';
 
-import { handleAddToCartSuccess, updateAmountSuccess } from './actions';
+import { addToCartSuccess, updateAmountSuccess } from './actions';
 
 function* addToCart({ id }) {
   const productExists = yield select((state) =>
@@ -19,7 +19,7 @@ function* addToCart({ id }) {
   const amount = currentAmount + 1;
 
   if (amount > stockAmount) {
-    toast.error('Quantidade solicitada fora de estoque!', {
+    toast.error('Not enough stock!', {
       position: 'bottom-right',
       hideProgressBar: false,
       closeOnClick: true,
@@ -30,30 +30,28 @@ function* addToCart({ id }) {
   }
 
   if (productExists) {
-    yield put(updateAmountSuccess(id, currentAmount));
+    yield put(updateAmountSuccess(id, amount));
   } else {
     const response = yield call(api.get, `/products/${id}`);
 
     const data = {
       ...response.data,
       amount: 1,
-      formattedPrice: formatPrice(response.data.price),
+      priceFormatted: formatPrice(response.data.price),
     };
 
-    yield put(handleAddToCartSuccess(data));
+    yield put(addToCartSuccess(data));
   }
 }
 
 function* updateAmount({ id, amount }) {
-  if (amount <= 0) {
-    return;
-  }
+  if (amount <= 0) return;
 
   const stock = yield call(api.get, `stock/${id}`);
   const stockAmount = stock.data.amount;
 
   if (amount > stockAmount) {
-    toast.error('Quantidade solicitada fora de estoque!', {
+    toast.error('Not enough stock!', {
       position: 'bottom-right',
       hideProgressBar: false,
       closeOnClick: true,

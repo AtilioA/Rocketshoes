@@ -24,7 +24,7 @@ export const Container = styled.div`
       transition: background 0.2s;
 
       &:hover {
-        background: ${darken(0.05, '#7159c1')}
+        background: ${darken(0.05, '#7159c1')};
       }
     }
   }
@@ -46,7 +46,6 @@ export const ProductTable = styled.table`
 
   img {
     height: 100px;
-
   }
 
   strong {
@@ -67,7 +66,7 @@ export const ProductTable = styled.table`
 
     input {
       text-align: right; /* Center? */
-      border: 1px solid #DDD;
+      border: 1px solid #ddd;
       border-radius: 4px;
       color: #666;
       padding: 6px;
